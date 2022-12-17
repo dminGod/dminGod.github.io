@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>LoRA Test 1</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+<div class="container">
+
+
+<h4>Params</h4>
+<pre>
+MODEL_NAME="stable-diffusion-2-1-base"; 
+LR = "constant"
+LEARNING_RATE="1.e-4"
+LEARNING_RATE_TEXT="5e-5"
+TRAINING_STEPS="1000"
+</pre>
+
+<h4>Thoughts</h4>
+<pre>
+UNet: 1.e-4, Test: 5e-5, Training steps: 1000 - 4 Images
+- Unet 0.75-1 is sort of okay, but still its hit and miss, not very impressed with these params.
+- Beyond 1.3 it looked so horrible, I stopped the whole test :D
+</pre>
+
+
+<h4>Original Images:</h4>
+
+
+<img src="./test_1_files/2.jpg" alt="1" width="300">
+<img src="./test_1_files/3.jpg" alt="1" width="300">
+
+<br>
+
+<img src="./test_1_files/5.jpg" alt="1" width="300">
+<img src="./test_1_files/6.jpg" alt="1" width="300">
+
+
+ <!-- this section can be replaced by a child document -->
+
+    
+        
+            <h3>Unet: 0, Text: 0</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_1_22900.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_1_97877.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_1_38169.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_1_85222.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 0.25, Text: 0</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_2_99788.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_2_13399.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_2_24535.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_2_75165.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 0, Text: 0.25</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_3_8417.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_3_26853.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_3_38447.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_3_40847.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 0.25, Text: 0.25</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_4_9281.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_4_57932.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_4_57946.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_4_58673.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 0.5, Text: 0</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_5_34677.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_5_3.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_5_28925.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_5_69819.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 0, Text: 0.5</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_6_35472.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_6_58018.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_6_10889.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_6_52129.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 0.5, Text: 0.5</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_7_70821.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_7_47348.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_7_60800.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_7_24659.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 0.5, Text: 0.25</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_8_36652.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_8_64964.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_8_94994.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_8_80703.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 0.25, Text: 0.5</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_9_77083.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_9_9174.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_9_53099.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_9_34596.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 0.75, Text: 0</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_10_14394.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_10_4918.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_10_66647.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_10_84956.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 0, Text: 0.75</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_11_3231.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_11_6532.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_11_81786.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_11_2900.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 0.75, Text: 0.75</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_12_13613.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_12_85601.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_12_86604.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_12_4420.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 0.75, Text: 0.5</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_13_43554.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_13_74811.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_13_41340.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_13_51240.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 0.5, Text: 0.75</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_14_26178.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_14_31596.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_14_70070.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_14_38493.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 1, Text: 0</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_15_3668.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_15_58485.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_15_42056.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_15_97818.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 0, Text: 1</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_16_43178.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_16_91398.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_16_31646.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_16_47596.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 1, Text: 1</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_17_94014.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_17_25789.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_17_30740.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_17_11576.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 1, Text: 0.75</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_18_48187.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_18_81891.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_18_88197.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_18_72702.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 0.75, Text: 1</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_19_57564.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_19_16729.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_19_42743.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_19_47644.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 1.3, Text: 0</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_20_66722.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_20_81691.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_20_64344.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_20_8813.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 0, Text: 1.3</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_21_20320.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_21_95067.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_21_86462.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_21_68327.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 1.3, Text: 1.3</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_22_53457.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_22_50320.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_22_48490.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_22_11189.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 1.3, Text: 1</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_23_96313.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_23_28585.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_23_67474.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_23_70020.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 1, Text: 1.3</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_24_59748.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_24_71421.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_24_77143.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_24_57647.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 1.5, Text: 0</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_25_11893.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_25_85320.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_25_44536.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_25_29323.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 0, Text: 1.5</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_26_74611.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_26_23520.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_26_57164.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_26_39678.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 1.5, Text: 1.5</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_27_77862.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_27_32889.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_27_32111.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_27_43466.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 1.5, Text: 1.3</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_28_91635.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_28_4769.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_28_25736.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_28_12054.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+            <h3>Unet: 1.3, Text: 1.5</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./test_1_files/img_1_29_58427.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_29_42447.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_29_22368.png" alt="image" width="300" height="300">
+        
+            <img src="./test_1_files/img_1_29_50848.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</div>
+
+
+</body></html>

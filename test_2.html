@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>LoRA Test 2</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+<div class="container">
+
+<h4>Params</h4>
+<pre>
+export MODEL_NAME="stable-diffusion-2-1-base"; 
+export LEARNING_RATE="3.71e-5"
+LR = "constant"
+export LEARNING_RATE_TEXT="1.9e-5"
+export TRAINING_STEPS="2700"
+</pre>
+
+<h4>Thoughts</h4>
+<pre>
+UNet: 3.71e-5, Test: 1.9e-5, Training steps: 2700 - 6 Images
+- Unet 0.75, Text: 0.75 there are some hints of resemblance
+- Unet 1.0, Text 1.0 is looking promising but not there all the way.
+- Other variations of 1.0 and 0.75 are close, but nothing to write home about.
+- 1.3 is not breaking as badly as the 1e-4, but stil, it isn't so convincing.
+- This could either be due to the smaller learning rate
+</pre>
+
+
+
+<h4>Original Images:</h4>
+
+<img src="./raw_data_files/1.jpg" alt="1" width="300">
+<img src="./raw_data_files/2.jpg" alt="1" width="300">
+<img src="./raw_data_files/3.jpg" alt="1" width="300">
+
+<br>
+<img src="./raw_data_files/4.jpg" alt="1" width="300">
+<img src="./raw_data_files/5.jpg" alt="1" width="300">
+<img src="./raw_data_files/6.jpg" alt="1" width="300">
+
+
+ <!-- this section can be replaced by a child document -->
+
+    
+        
+            <h3>Unet: 0, Text: 0</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_1_1_69470.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_1_48180.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_1_45369.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_1_65800.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">an intricate pencil portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_2_25_54896.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_25_31626.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_25_87183.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_25_92185.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">Ultra realistic illustration of sjqw1, dream girl with white hair, with light green eyes, with cat ears, in a sundress, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha</p>
+
+        
+            <img src="./raw_data_files/img_3_49_46236.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_49_2101.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_49_58407.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_49_22936.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+            <hr>
+        
+    
+
+    
+        
+            <h3>Unet: 0.25, Text: 0</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_1_2_93309.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_2_41473.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_2_49440.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_2_68671.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">an intricate pencil portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_2_26_85775.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_26_75551.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_26_38248.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_26_44680.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">Ultra realistic illustration of sjqw1, dream girl with white hair, with light green eyes, with cat ears, in a sundress, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha</p>
+
+        
+            <img src="./raw_data_files/img_3_50_99479.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_50_86243.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_50_64465.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_50_63951.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+            <hr>
+        
+    
+
+    
+        
+            <h3>Unet: 0, Text: 0.25</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_1_3_30263.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_3_84702.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_3_11107.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_3_53576.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">an intricate pencil portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_2_27_46230.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_27_3300.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_27_8003.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_27_9321.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">Ultra realistic illustration of sjqw1, dream girl with white hair, with light green eyes, with cat ears, in a sundress, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha</p>
+
+        
+            <img src="./raw_data_files/img_3_51_9018.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_51_34240.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_51_42251.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_51_37051.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+            <hr>
+        
+    
+
+    
+        
+            <h3>Unet: 0.25, Text: 0.25</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_1_4_84612.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_4_47665.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_4_27956.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_4_16330.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">an intricate pencil portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_2_28_34969.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_28_81992.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_28_80216.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_28_92937.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">Ultra realistic illustration of sjqw1, dream girl with white hair, with light green eyes, with cat ears, in a sundress, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha</p>
+
+        
+            <img src="./raw_data_files/img_3_52_70701.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_52_53845.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_52_86353.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_52_14221.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+            <hr>
+        
+    
+
+    
+        
+            <h3>Unet: 0.5, Text: 0</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_1_5_80020.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_5_60782.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_5_36284.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_5_93687.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">an intricate pencil portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_2_29_33476.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_29_53031.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_29_9971.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_29_43016.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">Ultra realistic illustration of sjqw1, dream girl with white hair, with light green eyes, with cat ears, in a sundress, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha</p>
+
+        
+            <img src="./raw_data_files/img_3_53_64283.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_53_14538.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_53_8078.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_53_67014.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+            <hr>
+        
+    
+
+    
+        
+            <h3>Unet: 0, Text: 0.5</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_1_6_70938.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_6_94273.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_6_93045.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_6_78053.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">an intricate pencil portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_2_30_36314.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_30_9071.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_30_71490.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_30_19374.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">Ultra realistic illustration of sjqw1, dream girl with white hair, with light green eyes, with cat ears, in a sundress, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha</p>
+
+        
+            <img src="./raw_data_files/img_3_54_33747.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_54_13829.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_54_81422.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_54_19763.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+            <hr>
+        
+    
+
+    
+        
+            <h3>Unet: 0.5, Text: 0.5</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_1_7_81894.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_7_68171.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_7_68051.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_7_76614.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">an intricate pencil portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_2_31_64255.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_31_25580.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_31_23781.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_31_2289.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">Ultra realistic illustration of sjqw1, dream girl with white hair, with light green eyes, with cat ears, in a sundress, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha</p>
+
+        
+            <img src="./raw_data_files/img_3_55_9177.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_55_95105.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_55_5450.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_55_90207.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+            <hr>
+        
+    
+
+    
+        
+            <h3>Unet: 0.5, Text: 0.25</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_1_8_37034.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_8_49360.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_8_48598.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_8_54114.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">an intricate pencil portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_2_32_69479.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_32_22008.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_32_75197.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_32_65591.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">Ultra realistic illustration of sjqw1, dream girl with white hair, with light green eyes, with cat ears, in a sundress, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha</p>
+
+        
+            <img src="./raw_data_files/img_3_56_95336.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_56_2469.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_56_50774.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_56_70076.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+            <hr>
+        
+    
+
+    
+        
+            <h3>Unet: 0.25, Text: 0.5</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_1_9_53623.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_9_73889.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_9_88348.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_9_47061.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">an intricate pencil portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_2_33_76113.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_33_75666.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_33_58002.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_33_91917.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">Ultra realistic illustration of sjqw1, dream girl with white hair, with light green eyes, with cat ears, in a sundress, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha</p>
+
+        
+            <img src="./raw_data_files/img_3_57_13601.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_57_17455.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_57_96812.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_57_26117.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+            <hr>
+        
+    
+
+    
+        
+            <h3>Unet: 0.75, Text: 0</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_1_10_26022.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_10_86555.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_10_12199.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_10_30633.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">an intricate pencil portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_2_34_79387.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_34_34516.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_34_31916.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_34_35392.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">Ultra realistic illustration of sjqw1, dream girl with white hair, with light green eyes, with cat ears, in a sundress, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha</p>
+
+        
+            <img src="./raw_data_files/img_3_58_95089.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_58_55537.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_58_61127.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_58_87913.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+            <hr>
+        
+    
+
+    
+        
+            <h3>Unet: 0, Text: 0.75</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_1_11_1591.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_11_25164.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_11_80248.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_11_40900.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">an intricate pencil portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_2_35_91037.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_35_88381.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_35_70215.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_35_27257.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">Ultra realistic illustration of sjqw1, dream girl with white hair, with light green eyes, with cat ears, in a sundress, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha</p>
+
+        
+            <img src="./raw_data_files/img_3_59_88630.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_59_42133.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_59_67657.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_59_86422.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+            <hr>
+        
+    
+
+    
+        
+            <h3>Unet: 0.75, Text: 0.75</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_1_12_3332.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_12_88046.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_12_71725.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_12_31465.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">an intricate pencil portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_2_36_18847.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_36_73665.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_36_90478.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_36_56292.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">Ultra realistic illustration of sjqw1, dream girl with white hair, with light green eyes, with cat ears, in a sundress, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha</p>
+
+        
+            <img src="./raw_data_files/img_3_60_40238.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_60_29384.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_60_62707.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_60_31024.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+            <hr>
+        
+    
+
+    
+        
+            <h3>Unet: 0.75, Text: 0.5</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_1_13_92704.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_13_41506.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_13_99713.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_13_97152.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">an intricate pencil portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_2_37_28417.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_37_63995.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_37_92680.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_37_7483.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">Ultra realistic illustration of sjqw1, dream girl with white hair, with light green eyes, with cat ears, in a sundress, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha</p>
+
+        
+            <img src="./raw_data_files/img_3_61_64091.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_61_44730.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_61_17543.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_61_73540.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+            <hr>
+        
+    
+
+    
+        
+            <h3>Unet: 0.5, Text: 0.75</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_1_14_77929.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_14_69028.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_14_19012.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_14_7200.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">an intricate pencil portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_2_38_46001.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_38_65486.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_38_2493.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_38_89293.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">Ultra realistic illustration of sjqw1, dream girl with white hair, with light green eyes, with cat ears, in a sundress, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha</p>
+
+        
+            <img src="./raw_data_files/img_3_62_58229.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_62_80200.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_62_57953.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_62_35965.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+            <hr>
+        
+    
+
+    
+        
+            <h3>Unet: 1, Text: 0</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_1_15_19579.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_15_10757.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_15_4968.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_15_68635.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">an intricate pencil portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_2_39_55127.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_39_4021.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_39_10239.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_39_53380.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">Ultra realistic illustration of sjqw1, dream girl with white hair, with light green eyes, with cat ears, in a sundress, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha</p>
+
+        
+            <img src="./raw_data_files/img_3_63_16012.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_63_81218.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_63_63473.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_63_39616.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+            <hr>
+        
+    
+
+    
+        
+            <h3>Unet: 0, Text: 1</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_1_16_53728.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_16_30802.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_16_55681.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_16_43234.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">an intricate pencil portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_2_40_54784.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_40_71168.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_40_84647.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_40_7471.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">Ultra realistic illustration of sjqw1, dream girl with white hair, with light green eyes, with cat ears, in a sundress, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha</p>
+
+        
+            <img src="./raw_data_files/img_3_64_9463.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_64_81152.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_64_91262.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_64_16735.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+            <hr>
+        
+    
+
+    
+        
+            <h3>Unet: 1, Text: 1</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_1_17_14998.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_17_59634.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_17_62619.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_17_21342.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">an intricate pencil portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_2_41_42220.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_41_58534.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_41_8640.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_41_63270.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">Ultra realistic illustration of sjqw1, dream girl with white hair, with light green eyes, with cat ears, in a sundress, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha</p>
+
+        
+            <img src="./raw_data_files/img_3_65_17062.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_65_47841.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_65_94.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_65_9546.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+            <hr>
+        
+    
+
+    
+        
+            <h3>Unet: 1, Text: 0.75</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_1_18_46024.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_18_91889.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_18_43901.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_18_83058.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">an intricate pencil portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_2_42_43815.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_42_53718.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_42_88049.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_42_337.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">Ultra realistic illustration of sjqw1, dream girl with white hair, with light green eyes, with cat ears, in a sundress, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha</p>
+
+        
+            <img src="./raw_data_files/img_3_66_58256.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_66_257.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_66_49791.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_66_62950.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+            <hr>
+        
+    
+
+    
+        
+            <h3>Unet: 0.75, Text: 1</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_1_19_21464.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_19_6144.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_19_89424.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_19_37093.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">an intricate pencil portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_2_43_7049.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_43_67169.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_43_65450.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_43_47905.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">Ultra realistic illustration of sjqw1, dream girl with white hair, with light green eyes, with cat ears, in a sundress, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha</p>
+
+        
+            <img src="./raw_data_files/img_3_67_23803.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_67_37132.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_67_77166.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_67_39284.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+            <hr>
+        
+    
+
+    
+        
+            <h3>Unet: 1.3, Text: 0</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_1_20_50901.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_20_82688.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_20_52442.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_20_37383.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">an intricate pencil portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_2_44_3168.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_44_62018.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_44_91282.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_44_14661.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">Ultra realistic illustration of sjqw1, dream girl with white hair, with light green eyes, with cat ears, in a sundress, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha</p>
+
+        
+            <img src="./raw_data_files/img_3_68_1086.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_68_70413.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_68_85903.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_68_3407.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+            <hr>
+        
+    
+
+    
+        
+            <h3>Unet: 0, Text: 1.3</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_1_21_36249.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_21_85098.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_21_63151.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_21_5665.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">an intricate pencil portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_2_45_91131.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_45_58465.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_45_68091.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_45_84739.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">Ultra realistic illustration of sjqw1, dream girl with white hair, with light green eyes, with cat ears, in a sundress, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha</p>
+
+        
+            <img src="./raw_data_files/img_3_69_70597.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_69_22566.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_69_65621.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_69_40143.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+            <hr>
+        
+    
+
+    
+        
+            <h3>Unet: 1.3, Text: 1.3</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_1_22_82613.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_22_75465.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_22_47918.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_22_95817.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">an intricate pencil portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_2_46_52073.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_46_58637.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_46_36779.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_46_53045.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">Ultra realistic illustration of sjqw1, dream girl with white hair, with light green eyes, with cat ears, in a sundress, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha</p>
+
+        
+            <img src="./raw_data_files/img_3_70_30178.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_70_3312.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_70_30687.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_70_67300.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+            <hr>
+        
+    
+
+    
+        
+            <h3>Unet: 1.3, Text: 1</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_1_23_43434.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_23_62650.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_23_9657.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_23_22531.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">an intricate pencil portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_2_47_68672.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_47_41381.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_47_38056.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_47_91324.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">Ultra realistic illustration of sjqw1, dream girl with white hair, with light green eyes, with cat ears, in a sundress, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha</p>
+
+        
+            <img src="./raw_data_files/img_3_71_1293.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_71_26390.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_71_41365.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_71_22120.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+            <hr>
+        
+    
+
+    
+        
+            <h3>Unet: 1, Text: 1.3</h3>
+        
+        <p style="font-size: 10px;">a closeup portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_1_24_82623.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_24_97560.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_24_48580.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_1_24_74825.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">an intricate pencil portrait of sjqw1 woman</p>
+
+        
+            <img src="./raw_data_files/img_2_48_38087.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_48_78588.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_48_93384.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_2_48_82622.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;">Ultra realistic illustration of sjqw1, dream girl with white hair, with light green eyes, with cat ears, in a sundress, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha</p>
+
+        
+            <img src="./raw_data_files/img_3_72_96998.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_72_35129.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_72_2868.png" alt="image" width="300" height="300">
+        
+            <img src="./raw_data_files/img_3_72_32923.png" alt="image" width="300" height="300">
+        
+        <br>
+
+        
+            <hr>
+        
+    
+
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+        
+        <p style="font-size: 10px;"></p>
+
+        
+        <br>
+
+        
+    
+
+
+
+<script src="./raw_data_files/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</div>
+
+
+</body></html>
